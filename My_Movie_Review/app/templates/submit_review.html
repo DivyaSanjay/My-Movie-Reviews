@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Submit Review</h1>
+    <form action="" method="post">
+        {{ sub_rev.hidden_tag() }}
+        <p>
+            {{ sub_rev.Review.label }}<br>
+            {{ form.Review(size=500) }}<br>
+            {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+    </form>
+{% endblock %}

@@ -1,0 +1,81 @@
+2018-05-19 14:31:43,195 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:46]
+2018-05-19 14:32:07,815 ERROR: Exception on /login [GET] [in C:\Users\user\Anaconda3\lib\site-packages\flask\app.py:1587]
+Traceback (most recent call last):
+  File "C:\Users\user\Anaconda3\lib\site-packages\flask\app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\Anaconda3\lib\site-packages\flask\app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\Anaconda3\lib\site-packages\flask\app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\user\Anaconda3\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\user\Anaconda3\lib\site-packages\flask\app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\Anaconda3\lib\site-packages\flask\app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\My_Movie_Review\app\routes.py", line 57, in login
+    return render_template('login.html', title='Sign In', form=form)
+  File "C:\Users\user\Anaconda3\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\user\Anaconda3\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\My_Movie_Review\app\templates\base.html", line 41, in template
+    {% with messages = get_flashed messages() %}
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\environment.py", line 986, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "C:\My_Movie_Review\app\templates\login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\My_Movie_Review\app\templates\base.html", line 41, in template
+    {% with messages = get_flashed messages() %}
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\environment.py", line 470, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\parser.py", line 897, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\parser.py", line 121, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\parser.py", line 231, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\parser.py", line 156, in parse_statements
+    result = self.subparse(end_tokens)
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\parser.py", line 879, in subparse
+    rv = self.parse_statement()
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\parser.py", line 128, in parse_statement
+    return ext(self)
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\ext.py", line 423, in parse
+    parser.stream.expect('comma')
+  File "C:\Users\user\Anaconda3\lib\site-packages\jinja2\lexer.py", line 374, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got 'messages'
+2018-05-19 15:22:47,291 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:46]
+2018-05-19 15:24:23,731 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:46]
+2018-05-19 15:25:13,074 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:46]
+2018-05-19 16:44:52,436 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:48]
+2018-05-20 15:11:09,088 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 15:24:22,102 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 15:25:54,411 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 15:34:04,270 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 15:39:36,941 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 15:41:50,024 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 17:20:56,633 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 17:24:40,409 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 20:47:34,680 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 20:48:11,057 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 20:49:07,136 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 20:49:58,805 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 20:57:00,144 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-20 21:55:42,185 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-21 20:56:58,642 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-21 20:57:21,291 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:50]
+2018-05-23 12:35:04,590 INFO: My Movie Review startup [in C:\My_Movie_Review\app\__init__.py:67]
